@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Home from "./Pages/Home";
+import "./styles/global.css";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const [questions, setQuestions] = React.useState([]);
+  const [word, setWord] = React.useState("");
+
+  const fetchData = async () => {
+    const res = await fetch("https://nodejs-test-task.herokuapp.com/questions");
+    const data = await res.json();
+    setQuestions(data.data);
+  };
+
+  React.useEffect(() => {
+    fetchData();
+  }, []);
+
+  return <Home />;
 }
 
 export default App;

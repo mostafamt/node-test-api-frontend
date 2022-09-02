@@ -1,0 +1,50 @@
+.button {
+  /* max-width: 200px; */
+  width: 100%;
+  padding: 3% 5%;
+  text-align: start;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* max-height: 90%; */
+  height: 100%;
+}
+
+.truey {
+  background-color: rgba(0, 0, 0, 0.01);
+}
+
+.falsy {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.icon {
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 50%;
+  font-size: 3rem;
+}
+
+.check {
+  color: green;
+  border-color: green;
+}
+
+.clear {
+  /* background-color: tomato; */
+  color: tomato;
+  border-color: tomato;
+}
+
+@media only screen and (max-width: 600px) {
+  .button {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .button {
+    font-size: 0.8rem;
+  }
+}
