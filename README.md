@@ -1,6 +1,19 @@
-# Getting Started with Create React App
+# Test API (Frontend)
+<b>Description: </b>Test API is a frontend for Test API backend.<br>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Dependencies
+1- React<br>
+2- MUI<br>
+3- Emotion<br>
+4- Styled Components<br>
+
+## Installation
+1- install nodejs<br>
+2- install npm (node package manager) <br>
+3- run : npm install , it will install all dependencies.<br>
+4- run : npm run start, to start in development mode .<br>
+or already you can just open Live version from: https://nagwa.vercel.app/  <br>
 
 ## Available Scripts
 
